@@ -1,9 +1,9 @@
 const std = @import("std");
 
-pub fn dump(data: []const u8, limit: usize) void {
+pub fn dump(data: []const u8) void {
     var offset: usize = 0;
     const chunk_size = 16;
-    const len = @min(limit, data.len);
+    const len = data.len;
 
     while (offset < len) : (offset += chunk_size) {
         std.debug.print("{x:0>8}  ", .{offset});
