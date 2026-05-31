@@ -5,6 +5,6 @@ A simple `hexdump` implementation written in Zig.
 ## Usage
 
 ```bash
-zig build-exe main.zig -femit-bin=hexdump
-./hexdump <file_path> [limit]
+zig build run
+./zig-out/bin/hexdump <file_path> [limit]
 ```
