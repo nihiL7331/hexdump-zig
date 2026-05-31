@@ -47,8 +47,8 @@ pub fn main(init: std.process.Init) !void {
 
     const file_path = args[1];
 
-    const file_data = try std.Io.Dir.readFileAlloc(
-        std.Io.Dir.cwd(),
+    const file_data = try Io.Dir.readFileAlloc(
+        Io.Dir.cwd(),
         init.io,
         file_path,
         arena,
